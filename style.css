@@ -30,11 +30,11 @@ input{
     box-sizing: border-box;
     border-radius: 10px;
     
-    
+    outline: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.005em;
     text-align: center;
@@ -68,8 +68,10 @@ input{
     width:272px;
     height:800px;
     background: linear-gradient(179.94deg, #0873E9 0.01%, rgba(2, 81, 177, 0) 50%), linear-gradient(180.07deg, #0873E9 58.64%, #0251B1 99.98%);
-    opacity: 0.65;
+    opacity: 0.95;
     grid-row:1/-1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    
 }
 .sidebar > ul li {
     font-family: Roboto;
@@ -79,7 +81,13 @@ input{
     line-height: 28px;
     letter-spacing: -0.005em;
     color: #FFFFFF;
-    
+    padding:10px;
+    cursor: pointer;
+        
+}
+.home{
+    background: #8cc6e1;
+    border-radius: 50px;
 }
 ul{
     list-style: none;
@@ -104,7 +112,8 @@ ul{
     background: #FFFFFF;
     grid-row:2/3;
     grid-column:2/4; 
-     
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 7px;
 }
 
 
@@ -157,10 +166,12 @@ ul{
     color:white;
     background: linear-gradient(104.87deg, #FF7075 20.42%, rgba(254, 141, 3, 0.96) 151.74%);
     border-radius: 22.5px;
+    cursor: pointer;
+    outline: none;
 }
 .card1{
     position: absolute;
-    width: 422px;
+    width: 402px;
     height: 349px;
     left: 303px;
     top: 467px;
@@ -168,13 +179,15 @@ ul{
     background: #FFFFFF;
     grid-row:3/4;
     grid-column:2/3;
+    border-radius: 5px;
     
 }
 .card1-image{
     position:absolute;
-    width: 421px;
+    width: 401px;
     height: 190px;
     background: url(car.jpg);
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     
 }
 
@@ -194,14 +207,15 @@ ul{
 
 .card2{
     position: absolute;
-    width: 422px;
+    width: 402px;
     height: 349px;
-    left: 787px;
+    left: 727px;
     top: 467px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     background: #FFFFFF;
     grid-row:3/4;
     grid-column:3/4;
+    border-radius: 5px;
 }
 .bitdope{
     position: absolute;
@@ -209,8 +223,8 @@ ul{
     height: 315px;
     left: 1081px;
     top: 121px;
-    
-
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     background: #FFFFFF;
     grid-row:2/-1;
     grid-column:4/5;
@@ -311,12 +325,238 @@ ul{
     right:60px;
 }
 
+.stories{
+    width:340px;
+    height:350px;
+    position:absolute; 
+    top:467px;
+    left:1150px;
+/*    border:solid 1px black;*/
+    grid-row:3/4;
+    grid-column: 4/5;
+}
+
+.stories-header{
+    position:absolute;
+    top:20px;
+    left:105px;
+    
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+
+    color: #12D36D;
+}
+
+.stories-star{
+    position:absolute;
+    top:22px;
+    left:60px;
+}
+
+.stories-header-desc{
+    position:absolute;
+    top:55px;
+    left:105px;
+    
+    font-family: PT Serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #70727E;
+}
+.technology{
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 300px;
+    padding:10px;
+
+    position:absolute;
+    top:90px;
+    left:30px;
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.005em;
+    color: rgba(0, 0, 0, 0.81);
+    border: solid 1px #ffffff;
+    outline:none;
+    
+}
+.technology img{
+    position:absolute;
+    height:32px;
+    width:30px;
+    left:9px;
+    top:9px;
+    background: #FFE1E5;
+    border-radius: 5px;
+    padding:2px;
+}
+.technology p{
+    position:relative;
+    left:-30px;
+}
+.automobiles{
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 300px;
+    padding:10px;
+    position:absolute;
+    top:150px;
+    left:30px;
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.005em;
+    outline:none;
+    color: rgba(0, 0, 0, 0.81);
+    border: solid 1px #ffffff;  
+}
+
+.automobiles img{
+    position:absolute;
+    height:32px;
+    width:30px;
+    left:9px;
+    top:9px;
+    background: #EFE1F5;
+    border-radius: 5px;
+    padding:2px;
+}
+
+.automobiles p{
+    position:relative;
+    left:-30px;
+}
+
+.politics{
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 300px;
+    padding:10px;
+    position:absolute;
+    top:210px;
+    left:30px;
+    
+    
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.005em;
+    outline:none;
+    color: #ffffff;
+    background: radial-gradient(47.77% 1069.79% at 49.55% 50.7%, #0770E3 0%, #004297 100%);
+    border: solid 1px #ffffff;
+    
+    
+}
+
+.politics img{
+    position:absolute;
+    height:32px;
+    width:30px;
+    left:9px;
+    top:9px;
+    background: #FFF5D4;
+    border-radius: 5px;
+    padding:2px;
+}
+.politics p{
+    position:relative;
+    left:-50px;
+}
+
+.world-news{
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 300px;
+    padding:10px;
+    
+    position:absolute;
+    top:270px;
+    left:30px;
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.005em;
+    outline:none;
+    color: rgba(0, 0, 0, 0.81);
+    border: solid 1px #ffffff;
+    
+    
+}
+
+.world-news img{
+    position:absolute;
+    height:32px;
+    width:30px;
+    left:9px;
+    top:9px;
+    background: #DDFDF7;
+    border-radius: 5px;
+    padding:2px;
+}
+.world-news p{
+    position:relative;
+    left:-30px;
+}
+
+.sports{
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 300px;
+    padding:10px;
+    
+    position:absolute;
+    top:330px;
+    left:30px;
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.005em;
+    outline:none;
+    color: rgba(0, 0, 0, 0.81);
+    border: solid 1px #ffffff;
+    
+    
+}
+.sports img{
+    position:absolute;
+    height:32px;
+    width:30px;
+    left:9px;
+    top:9px;
+    background: #FFE1E5;
+    border-radius: 5px;
+    padding:2px;
+}
+.sports p{
+    position:relative;
+    left:-50px
+}
 
 .container{
     width:100%;
     color:white;
+
     display:grid;
     grid-template-rows: 88px 315px 500px ;
-    grid-template-columns: 273px repeat(2 , 362px) 519px;
+    grid-template-columns: 273px repeat(2 , 432px) 382px;
     grid-gap: 0px;
 }
